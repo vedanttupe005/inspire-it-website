@@ -141,61 +141,61 @@
 
       <!-- Internet / MPLS / VPN -->
       <div class="col-lg-4 col-md-6">
-        <div class="service-card">
+        <div class="service-card" id="service1">
           <div class="icon-wrap"><i class="fas fa-network-wired"></i></div>
           <h5>Internet / MPLS / VPN</h5>
           <p>Dedicated leased lines, MPLS networks, and VPNs for secure and high-speed connectivity.</p>
-          <a href="#service1" class="btn-learn">Learn More »</a>
+          <a href="{{url_for('services')}}" class="btn-learn">Learn More »</a>
         </div>
       </div>
 
       <!-- Point to Point Connectivity -->
       <div class="col-lg-4 col-md-6">
-        <div class="service-card">
+        <div class="service-card" id="service2">
           <div class="icon-wrap"><i class="fas fa-exchange-alt"></i></div>
           <h5>Point to Point Connectivity</h5>
           <p>Reliable point-to-point solutions ensuring seamless data transfer between locations.</p>
-          <a href="#service2" class="btn-learn">Learn More »</a>
+          <a href="{{url_for('services')}}" class="btn-learn">Learn More »</a>
         </div>
       </div>
 
       <!-- Telecom Tower Installation -->
       <div class="col-lg-4 col-md-6">
-        <div class="service-card">
+        <div class="service-card" id="service3">
           <div class="icon-wrap"><i class="fas fa-broadcast-tower"></i></div>
           <h5>Telecom Tower Installation</h5>
           <p>Professional telecom tower setup and maintenance to ensure reliable communication coverage.</p>
-          <a href="#service3" class="btn-learn">Learn More »</a>
+          <a href="{{url_for('services')}}" class="btn-learn">Learn More »</a>
         </div>
       </div>
 
       <!-- Firewall / Router / Switch -->
       <div class="col-lg-4 col-md-6">
-        <div class="service-card">
+        <div class="service-card" id="service4">
           <div class="icon-wrap"><i class="fas fa-shield-alt"></i></div>
           <h5>Firewall / Switch / Router Supply</h5>
           <p>Enterprise-grade firewalls, routers, and switches to secure and optimize networks.</p>
-          <a href="#service4" class="btn-learn">Learn More »</a>
+          <a href="{{url_for('services')}}" class="btn-learn">Learn More »</a>
         </div>
       </div>
 
       <!-- Structured Cabling -->
       <div class="col-lg-4 col-md-6">
-        <div class="service-card">
+        <div class="service-card" id="service5">
           <div class="icon-wrap"><i class="fas fa-project-diagram"></i></div>
           <h5>Structured Cabling</h5>
           <p>End-to-end structured cabling solutions to support scalable and efficient IT infrastructure.</p>
-          <a href="#service5" class="btn-learn">Learn More »</a>
+          <a href="{{url_for('services')}}" class="btn-learn">Learn More »</a>
         </div>
       </div>
 
       <!-- CCTV Surveillance -->
       <div class="col-lg-4 col-md-6">
-        <div class="service-card">
+        <div class="service-card" id="service6">
           <div class="icon-wrap"><i class="fas fa-video"></i></div>
           <h5>CCTV Surveillance</h5>
           <p>Advanced surveillance solutions with monitoring and AMC services for enhanced security.</p>
-          <a href="#service6" class="btn-learn">Learn More »</a>
+          <a href="{{url_for('services')}}" class="btn-learn">Learn More »</a>
         </div>
       </div>
 
@@ -206,44 +206,52 @@
 
 
 <!-- Why Choose Us -->
-<section class="py-5 bg-light text-center why-choose">
-  <div class="container">
-    <h6 class="text-uppercase fw-bold text-danger mb-2">Why Choose Inspire IT?</h6>
-    <h5 class="fw-bold mb-5">
-      Fast, reliable, and affordable internet services designed for businesses and homes in Pune
-    </h5>
+<section class="why-choose py-5">
+  <div class="container text-center">
+
+    <h6 class="section-tag">WHY CHOOSE INSPIRE IT?</h6>
+    <h2 class="section-heading mb-5">
+      Fast, Reliable & Secure Internet Solutions for Homes and Businesses
+    </h2>
+
     <div class="row g-4">
+
       <div class="col-md-3 col-6">
         <div class="choose-card animate-up">
-          <i class="fas fa-rocket"></i>
+          <div class="icon-wrap"><i class="fas fa-rocket"></i></div>
           <h5>Lightning-Fast Speeds</h5>
-          <p>Seamless streaming, quick downloads, and smooth online experiences.</p>
+          <p>Experience ultra-fast downloads and seamless 4K streaming.</p>
         </div>
       </div>
+
       <div class="col-md-3 col-6">
         <div class="choose-card animate-up">
-          <i class="fas fa-wifi"></i>
+          <div class="icon-wrap"><i class="fas fa-wifi"></i></div>
           <h5>Reliable Network</h5>
-          <p>Always-on connectivity powered by advanced networking infrastructure.</p>
+          <p>99.9% uptime backed by enterprise-grade infrastructure.</p>
         </div>
       </div>
+
       <div class="col-md-3 col-6">
         <div class="choose-card animate-up">
-          <i class="fas fa-shield-alt"></i>
-          <h5>Security & Privacy</h5>
-          <p>Advanced encryption & monitoring to protect your digital assets.</p>
+          <div class="icon-wrap"><i class="fas fa-shield-alt"></i></div>
+          <h5>Advanced Security</h5>
+          <p>Stay protected with strong encryption and smart monitoring.</p>
         </div>
       </div>
+
       <div class="col-md-3 col-6">
         <div class="choose-card animate-up">
-          <i class="fas fa-headset"></i>
-          <h5>24x7 Premium Support</h5>
-          <p>Always available to resolve issues quickly and keep you connected.</p>
+          <div class="icon-wrap"><i class="fas fa-headset"></i></div>
+          <h5>24/7 Expert Support</h5>
+          <p>Our team is always available to keep you connected.</p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
 
 
 {% endblock %}

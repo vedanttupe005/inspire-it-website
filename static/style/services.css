@@ -126,89 +126,11 @@
 
 
 
-/* SERVICES icon's ROW */
-.services-row .service-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 16px;
-  padding: 25px 15px;
-  text-decoration: none;
-  color: #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  height: 160px;  /* consistent square shape */
-}
-
-.services-row .service-link i {
-  font-size: 36px;
-  color: #ff6a00;
-  margin-bottom: 12px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.services-row .service-link p {
-  margin: 0;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.services-row .service-link:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
-  color: #ff6a00;
-}
-
-.services-row .service-link:hover i {
-  transform: scale(1.2) rotate(8deg);
-  color: #e65c00;
-}
 
 
 
-/* Service Cards */
-.services-cards {
-  padding: 80px 0;
-}
-.services-cards .section-title .subtitle {
-  color: #ff6a00;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.service-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-}
-.service-card i {
-  font-size: 30px;
-  color: #ff6a00;
-  margin-bottom: 15px;
-}
-.service-card .btn-learn {
-  color: #fff;
-  background: #ff6a00;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  display: inline-block;
-  margin-top: 15px;
-  transition: background 0.3s ease;
-}
-.service-card .btn-learn:hover {
-  background: #e65c00;
-}
+
+
 
 /* =====================
    COVERAGE SECTION (Rich & Clean)

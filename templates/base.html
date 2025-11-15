@@ -60,32 +60,41 @@
   <!-- Page Content -->
   <main class="mt-0">
     {% block content %}{% endblock %}
+
   </main>
 
- <!-- Clients Section -->
+<!-- Clients Section -->
 <section class="clients py-5">
   <div class="container text-center">
     <h6 class="fw-bold text-uppercase">Our Clients</h6>
+
     <div class="client-slider">
       <div class="slide-track">
-        <img src="{{ url_for('static', filename='images/clients/wipro.png') }}" alt="Wipro">
-        <img src="{{ url_for('static', filename='images/clients/siemens.png') }}" alt="Siemens Gamesa">
-        <img src="{{ url_for('static', filename='images/clients/Mitsubishi.png') }}" alt="Mitsubishi Electric">
-        <img src="{{ url_for('static', filename='images/clients/Venkys.webp') }}" alt="Venky's">
-        <img src="{{ url_for('static', filename='images/clients/Manikchand.png') }}" alt="Manikchand">
-        <img src="{{ url_for('static', filename='images/clients/Ador.png') }}" alt="Ador">
-        <img src="{{ url_for('static', filename='images/clients/Finolex.png') }}" alt="Finolex">
-        <img src="{{ url_for('static', filename='images/clients/Mahindra.png') }}" alt="Mahindra Sanyo">
-        <img src="{{ url_for('static', filename='images/clients/Garware.jpg') }}" alt="Garware">
-        <img src="{{ url_for('static', filename='images/clients/Kirloskar.png') }}" alt="Kirloskar">
-        <!-- duplicate logos for smooth infinite scroll -->
-        <img src="{{ url_for('static', filename='images/clients/wipro.png') }}" alt="Wipro">
-        <img src="{{ url_for('static', filename='images/clients/siemens.png') }}" alt="Siemens Gamesa">
-        <img src="{{ url_for('static', filename='images/clients/Mitsubishi.png') }}" alt="Mitsubishi Electric">
+
+        {% set logos = [
+          'wipro.png','siemens.png','Mitsubishi.png','Venkys.webp','Manikchand.png',
+          'Ador.png','Finolex.png','Mahindra.png','Garware.jpg','Kirloskar.png'
+        ] %}
+
+        {% for logo in logos %}
+          <div class="client-logo-wrap">
+            <img src="{{ url_for('static', filename='images/clients/' + logo) }}" alt="Client Logo">
+          </div>
+        {% endfor %}
+
+        <!-- Duplicate for infinite scroll -->
+        {% for logo in logos %}
+          <div class="client-logo-wrap">
+            <img src="{{ url_for('static', filename='images/clients/' + logo) }}" alt="Client Logo">
+          </div>
+        {% endfor %}
+
       </div>
     </div>
+
   </div>
 </section>
+
 
 
 
