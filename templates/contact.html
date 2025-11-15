@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="contact-hero">
+  <div class="overlay">
+    <h1 class="fw-bold animate-fade">Contact Us</h1>
+    <p class="lead animate-slide">Start the conversation to build strong relationships and business with Inspire IT Pune.</p>
+  </div>
+</section>
+
+<!-- Contact Info -->
+<section class="py-5 contact-info">
+  <div class="container">
+    <div class="row g-4 text-center">
+
+      <!-- Head Office -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 p-4 animate-up">
+          <div class="icon-wrapper bg-warning text-white mb-3">
+            <i class="fas fa-building"></i>
+          </div>
+          <h5 class="fw-bold">Head Office</h5>
+          <p>Inspire IT, Loyyed Chamber, Block 2,<br> Mangalwar Peth, Pune - 411004.</p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4">
+        <div class="card gradient-card shadow h-100 p-4 animate-up">
+          <div class="icon-wrapper bg-primary text-white mb-3">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h5 class="fw-bold">Contact</h5>
+          <p>
+            <i class="fas fa-phone"></i> +91 8446 944 888 <br>
+            <i class="fas fa-envelope"></i> ankush@inspirenetworksolution.com
+          </p>
+        </div>
+      </div>
+
+      <!-- Branch Office -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 p-4 animate-up">
+          <div class="icon-wrapper bg-danger text-white mb-3">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h5 class="fw-bold">Branch Office</h5>
+          <p>Inspire IT, Office No. 21, Business Hub,<br> Hinjewadi, Pune - 411057.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact Form -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6 animate-left">
+        <h6 class="text-uppercase text-danger">Send Us a Message</h6>
+        <h2 class="fw-bold">Seamless Communication,<br> Global Impact.</h2>
+        <p class="text-muted">Our team at Inspire IT Pune is here to assist you with any technology, training, or service needs.</p>
+        <a href="#" class="btn btn-warning rounded-pill px-4">Customer Service</a>
+      </div>
+      <div class="col-md-6 animate-right">
+        <form method="POST" action="/contact" class="contact-form p-4 bg-white">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" name="mobile" class="form-control" placeholder="Mobile" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-md-6">
+              <select name="service" class="form-select">
+                <option selected disabled>Choose Service</option>
+                <option>Leased Line</option>
+                <option>Tower Installation & AMC</option>
+                <option>CCTV Surveillance</option>
+                <option>Campus WI-FI</option>
+                <option>Support</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <textarea name="message" rows="4" class="form-control" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-12 text-end">
+              <button type="submit" class="btn-submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Google Map with Red Marker -->
+<!-- Google Map with Fixed Red Marker -->
+<section class="mt-5 contact-map animate-up">
+  <div class="container">
+    <iframe
+      width="100%"
+      height="400"
+      style="border:0;"
+      loading="lazy"
+      allowfullscreen=""
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.0767173026647!2d73.866008!3d18.525434999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c05e0c6a391d%3A0x8a0c0b8012f350cf!2sLloyds%20Chambers!5e0!3m2!1sen!2sin!4v1758004998358!5m2!1sen!2sin">
+    </iframe>
+  </div>
+</section>
+
+
+
+
+{% endblock %}

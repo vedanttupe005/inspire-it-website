@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- About Hero Section -->
+<section class="about-hero d-flex align-items-center text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <h6 class="sub-heading animate-fade">ABOUT INSPIRE IT</h6>
+    <h1 class="fw-bold animate-fade">Reduce Your Network Performance Issues</h1>
+    <p class="lead animate-slide">Get Inspire, Get Connectivity</p>
+    <a href="#about-content" class="btn-gradient animate-slide">Learn More</a>
+  </div>
+</section>
+
+
+
+<!-- Who We Are -->
+<section class="about-who d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+
+      <!-- Left Content -->
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <h6 class="section-tagline">ABOUT US</h6>
+        <h2 class="fw-bold mb-3 gradient-text">
+          We Deliver Simplified & Reliable Connectivity
+        </h2>
+        <p class="section-desc mb-4">
+          At <strong>InspireIT</strong>, we specialize in providing enterprise-grade internet and network
+          solutions that simplify your digital operations. Our services include dedicated leased lines,
+          enterprise VPNs, and 24x7 managed IT support — all backed by strong SLA commitments.
+        </p>
+
+        <div class="row feature-list">
+          <div class="col-6">
+            <p><i class="fas fa-check-circle"></i> Corporate-Focused ISP</p>
+            <p><i class="fas fa-check-circle"></i> Hassle-Free Connectivity</p>
+            <p><i class="fas fa-check-circle"></i> Strong SLA Commitments</p>
+          </div>
+          <div class="col-6">
+            <p><i class="fas fa-check-circle"></i> 24x7 Operations</p>
+            <p><i class="fas fa-check-circle"></i> Excellent Support</p>
+            <p><i class="fas fa-check-circle"></i> Robust Security</p>
+          </div>
+        </div>
+
+        <a href="/services" class="btn btn-primary mt-4">Discover More</a>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-5 text-center position-relative">
+        <div class="about-image-wrapper">
+          <img src="{{ url_for('static', filename='images/support.jpg') }}"
+               alt="Support Team"
+               class="img-fluid rounded shadow-lg">
+          <div class="circle-badge">
+            <h5>Dedicated Leased Line</h5>
+            <p>Empowering Your Digital Journey</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Vision / Mission Section -->
+<section class="about-vmv py-5 text-white text-center">
+  <div class="overlay"></div>
+  <div class="container position-relative">
+    <h6 class="section-subtitle">OUR PURPOSE</h6>
+    <h2 class="section-title text-white">Connecting Businesses with Reliability</h2>
+    <p class="section-desc text-light mb-5">
+      Our vision and mission reflect our dedication to delivering reliable, customer-focused connectivity.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Vision -->
+      <div class="col-md-6 col-lg-5">
+        <div class="vmv-card">
+          <div class="icon-wrap"><i class="fas fa-globe"></i></div>
+          <h5>Our Vision</h5>
+          <p>
+            To be the most trusted corporate Internet Service Provider, delivering simplified and reliable connectivity solutions across industries.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mission -->
+      <div class="col-md-6 col-lg-5">
+        <div class="vmv-card highlight">
+          <div class="icon-wrap"><i class="fas fa-wifi"></i></div>
+          <h5>Our Mission</h5>
+          <p>
+            To empower businesses with secure, scalable, and cost-effective internet solutions — backed by unmatched service and 24×7 support.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Why Choose Us -->
+<section class="py-5 bg-light text-center why-choose">
+  <div class="container">
+    <h6 class="text-uppercase fw-bold text-danger mb-2">Why Choose Inspire IT?</h6>
+    <h5 class="fw-bold mb-5">
+      Fast, reliable, and affordable internet services designed for businesses and homes in Pune
+    </h5>
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="choose-card animate-up">
+          <i class="fas fa-rocket"></i>
+          <h5>Lightning-Fast Speeds</h5>
+          <p>Seamless streaming, quick downloads, and smooth online experiences.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="choose-card animate-up">
+          <i class="fas fa-wifi"></i>
+          <h5>Reliable Network</h5>
+          <p>Always-on connectivity powered by advanced networking infrastructure.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="choose-card animate-up">
+          <i class="fas fa-shield-alt"></i>
+          <h5>Security & Privacy</h5>
+          <p>Advanced encryption & monitoring to protect your digital assets.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="choose-card animate-up">
+          <i class="fas fa-headset"></i>
+          <h5>24x7 Premium Support</h5>
+          <p>Always available to resolve issues quickly and keep you connected.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Leadership Section -->
+<section class="about-leadership text-center text-white">
+  <div class="container">
+    <h6 class="section-subtitle">Corporate Leadership</h6>
+    <h2 class="section-title mb-3">Empowering Visionary Leaders</h2>
+    <p class="section-desc mb-5">
+      Our leadership team combines strategic vision, innovation, and commitment —
+      driving InspireIT toward excellence and lasting partnerships.
+    </p>
+
+    <div class="row g-5 justify-content-center">
+      <!-- Leader 1 -->
+      <div class="col-lg-3 col-md-6 col-10">
+        <div class="leader-card">
+          <div class="leader-img">
+            <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="Leader">
+          </div>
+          <div class="leader-info">
+            <h5>Ankush Salgavkar</h5>
+            <p>Founder</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leader 2 -->
+      <div class="col-lg-3 col-md-6 col-10">
+        <div class="leader-card">
+          <div class="leader-img">
+            <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Leader">
+          </div>
+          <div class="leader-info">
+            <h5>XXXXXXXXX</h5>
+            <p>Director [Tech]</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leader 3 -->
+      <div class="col-lg-3 col-md-6 col-10">
+        <div class="leader-card">
+          <div class="leader-img">
+            <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="Leader">
+          </div>
+          <div class="leader-info">
+            <h5>XXXXXXXXX</h5>
+            <p>Director</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leader 4 -->
+      <div class="col-lg-3 col-md-6 col-10">
+        <div class="leader-card">
+          <div class="leader-img">
+            <img src="{{ url_for('static', filename='images/team4.jpg') }}" alt="Leader">
+          </div>
+          <div class="leader-info">
+            <h5>XXXXXXXXXX</h5>
+            <p>Director</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="about-cta text-white">
+  <div class="container">
+    <div class="cta-content-box">
+      <h6 class="cta-subtitle">Join the Future of Connectivity</h6>
+      <h2 class="cta-title fw-bold mb-3">
+        Simplifying Connectivity for Modern Businesses
+      </h2>
+      <p class="cta-desc mb-4">
+        Partner with <strong>InspireIT</strong> to experience fast, reliable, and secure internet solutions —
+        built to empower your business with seamless connectivity.
+      </p>
+      <a href="/contact" class="btn btn-orange px-5 py-3">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+
+
+{% endblock %}

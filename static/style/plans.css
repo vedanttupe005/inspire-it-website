@@ -1,0 +1,168 @@
+/* =====================
+   HERO SECTION - No Orange Tint
+===================== */
+.plans-hero {
+  position: relative;
+  background: url('../images/plans-hero.jpeg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Dark gradient overlay for text readability */
+.plans-hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.25));
+  z-index: 1;
+}
+
+.plans-hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+/* Subtitle */
+.plans-hero .section-subtitle {
+  color: #ff6a00; /* keep brand orange */
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Heading */
+.plans-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* Description */
+.plans-hero p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #f5f5f5;
+  line-height: 1.7;
+}
+
+/* Learn More Button */
+.btn-learn {
+  color: #fff;
+  background: #ff6a00; /* keep orange brand color */
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.35s ease;
+  box-shadow: 0 6px 20px rgba(255, 106, 0, 0.35);
+}
+
+.btn-learn:hover {
+  background: #e65c00;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 106, 0, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .plans-hero {
+    height: 70vh;
+  }
+  .plans-hero h1 {
+    font-size: 2.2rem;
+  }
+  .plans-hero p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   SPECIAL OFFER SECTION
+============================ */
+.special-offer {
+  position: relative;
+  background: url('../images/about_hero.webp') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Subtle dark overlay for clarity */
+.special-offer .offer-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+/* Offer content glass-style box */
+.offer-content {
+  max-width: 800px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* Text & typography */
+.offer-subtitle {
+  letter-spacing: 1px;
+}
+
+.special-offer h2 span {
+  color: #ffb347; /* soft golden accent */
+}
+
+.special-offer p {
+  font-size: 1.15rem;
+  color: #f8f9fa;
+}
+
+/* Button */
+.btn-orange {
+  background-color: #ff8800;
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.btn-orange:hover {
+  background-color: #ff9d26;
+  transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade {
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+

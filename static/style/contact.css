@@ -1,0 +1,119 @@
+/* ---------- Hero ---------- */
+.contact-hero {
+  position: relative;
+  height: 60vh;
+  background: url("/static/images/contact-hero.webp") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.contact-hero .overlay {
+  text-align: center;
+  z-index: 2;
+}
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* ---------- Info Cards ---------- */
+.contact-info .card {
+  border-radius: 20px;
+  border: none;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.contact-info .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+
+/* Icon Styling */
+.contact-info .icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  background: #f8f9fa;
+  color: #ff6a00;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Hover effect on card also affects icon */
+.contact-info .card:hover .icon-wrapper {
+  transform: scale(1.15) rotate(8deg);
+  background: #ff6a00;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Gradient Card Special Styling */
+.gradient-card {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  color: white;
+}
+
+
+/* ---------- Contact Form ---------- */
+.contact-form {
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.1);
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: .95rem;
+  transition: all .2s ease;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #ff5f6d;
+  box-shadow: 0 0 6px rgba(255,95,109,.5);
+}
+.btn-submit {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 40px;
+  color: #fff;
+  font-weight: 500;
+  transition: transform .3s ease;
+}
+.btn-submit:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Map ---------- */
+.contact-map iframe {
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.1);
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+@keyframes slideUp { from {transform:translateY(30px); opacity:0;} to {transform:translateY(0); opacity:1;} }
+@keyframes slideLeft { from {transform:translateX(50px); opacity:0;} to {transform:translateX(0); opacity:1;} }
+@keyframes slideRight { from {transform:translateX(-50px); opacity:0;} to {transform:translateX(0); opacity:1;} }
+
+.animate-fade { animation: fadeIn 1.2s ease forwards; }
+.animate-slide { animation: slideUp 1.2s ease forwards; }
+.animate-up { animation: slideUp 1.2s ease forwards; }
+.animate-left { animation: slideLeft 1.2s ease forwards; }
+.animate-right { animation: slideRight 1.2s ease forwards; }
+
+/* ---------- Responsive ---------- */
+@media (max-width:768px) {
+  .contact-hero { height: 40vh; }
+  .contact-form { margin-top: 20px; }
+}
